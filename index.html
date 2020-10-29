@@ -1,0 +1,743 @@
+
+<html>
+    
+    <head>
+        
+           <title>SEO &amp; Content Marketing Audit | Web Profits | Digital Growth Consultancy</title>
+        <link rel="shorcut icon " href="wheader.ico">
+       
+    
+        
+        <link href="style.css" type="text/css" rel="stylesheet">
+    
+    
+    </head>
+
+<body>
+    
+    <script>
+        
+      
+        
+          
+            var canMove= 1;
+            var slide = 1;
+        
+        function move(cont){
+            var suma = 0;
+            suma = slide + cont;
+            if (canMove == 0 ){
+                return;
+            }
+            
+        var allPersonsDiv = document.getElementById("contenedor_slides");
+            
+            allPersonsDiv.classList.remove("goMove1_2");
+            allPersonsDiv.classList.remove("goMove2_1");
+            allPersonsDiv.classList.remove("goMove2_3");
+            allPersonsDiv.classList.remove("goMove3_2");
+            
+              void allPersonsDiv.clientLeft;
+            
+             allPersonsDiv.classList.add("goMove"+slide+"_"+suma);
+            
+            slide = suma;
+            setTimeout("resetCanMove()",2000);
+            
+            canMove=0;
+            
+               
+        } 
+            
+        function goToSlide(aux){
+            
+            var suma = 0;
+            suma = slide + aux;
+            
+           if (canMove == 0 ){
+                return;
+            }
+            
+        
+            
+            var allImagesDiv = document.getElementById("allimages");
+            allImagesDiv.classList.remove("goAnimation1_2");
+            allImagesDiv.classList.remove("goAnimation2_1");
+             allImagesDiv.classList.remove("goAnimation2_3");
+              allImagesDiv.classList.remove("goAnimation3_2");
+              allImagesDiv.classList.remove("goAnimation3_4");
+              allImagesDiv.classList.remove("goAnimation4_3");
+              allImagesDiv.classList.remove("goAnimation4_5");
+              allImagesDiv.classList.remove("goAnimation5_4");
+              allImagesDiv.classList.remove("goAnimation5_6");
+              allImagesDiv.classList.remove("goAnimation6_5");
+              allImagesDiv.classList.remove("goAnimation6_7");
+              allImagesDiv.classList.remove("goAnimation7_6");
+              allImagesDiv.classList.remove("goAnimation7_8");
+              allImagesDiv.classList.remove("goAnimation8_7");
+              allImagesDiv.classList.remove("goAnimation8_9");
+              allImagesDiv.classList.remove("goAnimation9_8");
+              allImagesDiv.classList.remove("goAnimation9_10");
+              allImagesDiv.classList.remove("goAnimation10_9");
+            
+            void allImagesDiv.clientLeft;
+            
+        
+            
+      allImagesDiv.classList.add("goAnimation"+slide+"_"+suma);
+            
+            slide = suma;
+            setTimeout("resetCanMove()",2000);
+            
+            canMove=0;
+            
+        }
+            
+        function resetCanMove(){
+         
+         canMove = 1;
+     }
+        
+          
+        function cambiarBoton(){
+            document.getElementById("1_i").classList.remove("original");
+            document.getElementById("1_i").classList.add("boton_2");
+        }
+        
+        function regresarBoton(){
+            
+              document.getElementById("1_i").classList.remove("boton_2");
+            document.getElementById("1_i").classList.add("original");
+            
+        }
+        
+        function cambiarBoton2(){
+            document.getElementById("1").classList.remove("original");
+            document.getElementById("1").classList.add("boton_2");
+        }
+        
+        function regresarBoton2(){
+            
+              document.getElementById("1").classList.remove("boton_2");
+            document.getElementById("1").classList.add("original");
+            
+        }
+        
+        function cambiarColor(){
+             document.getElementById("rosa").classList.remove("rosaNormal");
+            document.getElementById("rosa").classList.add("rosaOver");
+            
+          
+            
+        
+        }
+        
+        function regresarColor(){
+         document.getElementById("rosa").classList.add("rosaNormal");
+            document.getElementById("rosa").classList.remove("rosaOver");
+        
+            
+        }
+        
+        
+        function cambiarFlecha(){
+        document.getElementById("flecha").classList.remove("flecha");
+        document.getElementById("flecha").classList.add("flechaNegra");
+            
+        }
+        
+        function regresarFlecha(){
+        document.getElementById("flecha").classList.remove("flechaNegra");
+        document.getElementById("flecha").classList.add("flecha"); 
+        }
+        
+        function cambiarTexto(){
+        document.getElementById("textob").classList.remove("boton_texto");
+        document.getElementById("textob").classList.add("boton_textoN");
+            
+        }
+        function regresarTexto(){
+        document.getElementById("textob").classList.add("boton_texto");
+        document.getElementById("textob").classList.remove("boton_textoN");  
+        }
+        
+        function cambiarColor2(){
+             document.getElementById("rosa2").classList.remove("rosaNormal");
+            document.getElementById("rosa2").classList.add("rosaOver");
+            
+          
+            
+        
+        }
+        
+        function regresarColor2(){
+         document.getElementById("rosa2").classList.add("rosaNormal");
+         document.getElementById("rosa2").classList.remove("rosaOver");
+        
+            
+        }
+        
+        function cambiarFlecha2(){
+        document.getElementById("flecha2").classList.remove("flecha");
+        document.getElementById("flecha2").classList.add("flechaBlanca");
+            
+        }
+        
+        function regresarFlecha2(){
+        document.getElementById("flecha2").classList.remove("flechaBlanca");
+        document.getElementById("flecha2").classList.add("flecha"); 
+        }
+        
+        function cambiarTexto2(){
+        document.getElementById("textoigual").classList.remove("boton_texto");
+        document.getElementById("textoigual").classList.add("boton_textoB");
+            
+        }
+        
+        function regresarTexto2(){
+        document.getElementById("textoigual").classList.add("boton_texto");
+        document.getElementById("textoigual").classList.remove("boton_textoB");  
+        }
+        
+    
+        
+        
+        
+        function cambiarColor3(){
+            document.getElementById("rosa3").classList.remove("rosaNormal");
+            document.getElementById("rosa3").classList.add("rosaOver");
+            
+          
+            
+        
+        }
+        
+        function regresarColor3(){
+        document.getElementById("rosa3").classList.add("rosaNormal");
+         document.getElementById("rosa3").classList.remove("rosaOver");
+        
+            
+        }
+        
+        function cambiarFlecha3(){
+        document.getElementById("flecha3").classList.remove("flecha");
+        document.getElementById("flecha3").classList.add("flechaBlanca");
+            
+        }
+        
+        function regresarFlecha3(){
+        document.getElementById("flecha3").classList.remove("flechaBlanca");
+        document.getElementById("flecha3").classList.add("flecha"); 
+        }
+        
+        function cambiarTexto3(){
+        document.getElementById("textoigual3").classList.remove("boton_texto");
+        document.getElementById("textoigual3").classList.add("boton_textoB");
+            
+        }
+        
+        function regresarTexto3(){
+        document.getElementById("textoigual3").classList.add("boton_texto");
+        document.getElementById("textoigual3").classList.remove("boton_textoB");  
+        }
+        
+         
+        function cambiarColor4_1(){
+             document.getElementById("rosa4").classList.remove("rosaNormal");
+            document.getElementById("rosa4").classList.add("rosaOver");
+            
+          
+            
+        
+        }
+        
+        function regresarColor4_1(){
+         document.getElementById("rosa4").classList.add("rosaNormal");
+         document.getElementById("rosa4").classList.remove("rosaOver");
+        
+            
+        }
+          
+      
+        function cambiarFlecha4_1(){
+        document.getElementById("flecha4_1").classList.remove("flecha");
+        document.getElementById("flecha4_1").classList.add("flechaBlanca");
+            
+        }
+        
+        function regresarFlecha4_1(){
+        document.getElementById("flecha4_1").classList.remove("flechaBlanca");
+        document.getElementById("flecha4_1").classList.add("flecha"); 
+        }
+        
+        function cambiarTexto4_1(){
+        document.getElementById("textoigual4_1").classList.remove("boton_texto");
+        document.getElementById("textoigual4_1").classList.add("boton_textoB");
+            
+        }
+        
+        function regresarTexto4_1(){
+        document.getElementById("textoigual4_1").classList.add("boton_texto");
+        document.getElementById("textoigual4_1").classList.remove("boton_textoB");  
+        }
+        
+        function cambiarColor5(){
+             document.getElementById("rosa5").classList.remove("rosaNormal");
+            document.getElementById("rosa5").classList.add("rosaOver");
+            
+          
+            
+        
+        }
+        
+        function regresarColor5(){
+         document.getElementById("rosa5").classList.add("rosaNormal");
+         document.getElementById("rosa5").classList.remove("rosaOver");
+        
+            
+        }
+        
+            function cambiarFlecha5(){
+        document.getElementById("flecha5").classList.remove("flecha");
+        document.getElementById("flecha5").classList.add("flechaNegra");
+            
+        }
+        
+        function regresarFlecha5(){
+        document.getElementById("flecha5").classList.remove("flechaNegra");
+        document.getElementById("flecha5").classList.add("flecha"); 
+        }
+        
+        function cambiarTexto5(){
+        document.getElementById("textoigual5").classList.remove("boton_texto");
+        document.getElementById("textoigual5").classList.add("boton_textoN");
+            
+        }
+        
+        function regresarTexto5(){
+        document.getElementById("textoigual5").classList.add("boton_texto");
+        document.getElementById("textoigual5").classList.remove("boton_textoN");  
+        }
+        
+        
+        
+        
+        
+    
+
+    
+    </script>
+
+
+    <div class="containerall">
+        
+        <section id ="pruebaBanner" class="banner">
+            <img src="bottom_shape.svg" class="blanco">
+            <header>
+                <div class="content">
+                    <div class="part1">
+                        <a class="logo"><img src="logo.png"></a>
+                        <div class="part1">
+                         <span class="call">Call us today</span>
+                        <a class="call_now" >1300 820 429</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="container">
+                <div class="banner_content">
+                    <div class="content">
+                        <div class="part1 text1">
+                            <h1>Spy on your competitors<br> successful SEO &amp; Content<br> Marketing tactics</h1>
+                            
+                            
+        <div class="lugar_boton" onmouseover="cambiarColor(); cambiarFlecha();cambiarTexto();" onmouseout="regresarColor(); regresarFlecha();regresarTexto();">
+                     
+         <div  id="blanco"class="tamano2 boton1"></div>
+         <div  id="rosa" class="tamano2 boton1"></div>                     
+         <div id ="textob" class="boton_texto">Apply Now</div>
+         <div id="flecha"class="flecha"></div>
+                </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="main_section">
+            <div class="container">
+                <div class="all">
+                    <div class="content ct_responsive">
+                        
+                        <div id="primero" class="part1 mg_default ct_responsive">
+                            <div id="prueba"class="half1">
+                                <img src="group-image.png">
+                            </div>
+                            <div class="half">
+                                <h3>Have you ever looked at a competitor whose website shouldn't be ranking in a top search location (but they are)?</h3>
+                                <p>We get it. SEO &amp; Content Marketing can be frustrating! There's no exact formula, there's no on or off switch like Google Adwords and there's no way to know how your competitors are succeeding and obtaining those top search rankings they always seem to get... or is there?</p>
+                                <p>At Web Profits we hate guessing how people are ranking so we've worked out a method that removes all the guesswork and tells us exactly what tactics people are using to rank in the top search positions. We've done over 700 of these audits and the interesting thing is the tactics that work in one industry don't work in another - meaning auditing what does work is a must.</p>
+                                <p>To help you work out exactly what strategy you should employ going forward, and save time and money going down the wrong track, we'll perform a comprehensive audit of the top competitors who are ranking in the search positions and getting the results that you want. We'll review their website, review their results, scan their backlink and go through their onsite content, check out their most shared and linked to blog articles and find out exactly why Google values their website so much to award them top rankings.</p>
+                                <p>Get in touch with us today and let our SEO &amp; Content Marketing audit inform your strategy going forward, not guesswork and reap the rewards that follow because of it.</p>
+                            </div>
+                            
+                            
+                            
+                                  
+                 <div class="lugar_boton2" onmouseover="cambiarColor2(); cambiarFlecha2();cambiarTexto2();" onmouseout="regresarColor2(); regresarFlecha2();regresarTexto2();">
+                     
+                    <div  id="gris"class="tamano2 boton1"></div>
+                    <div  id="rosa2" class="tamano2 boton1"></div>
+              
+                    <div id="textoigual"class="boton_texto" >Apply Now</div>
+                    <div id="flecha2"class="flecha"></div>
+                </div>
+                        
+                            
+                             
+                                </div>
+                              
+                           </div>
+                      
+                        </div>
+                        
+                   
+                    <div class="content ct_responsive">
+                        <div class="center">
+                            <h2>What's included in your SEO &amp;<br> Content Marketing audit?</h2>
+                            <p class="sub">We will tailor the audit to your business, your team's level of SEO knowledge and the competitors that you have, but generally an SEO &amp; Content Marketing audit will include:</p>
+                        </div>
+                 
+                        <div class="part1  ct_responsive ">
+                            <div class="half">
+                                <ul class="text2">
+                                    <li><span>01.</span>An expert Search &amp; Content Marketing Consultant with relevant industry experience.</li>
+
+                                    <li><span>02.</span>A full technical onsite-audit of both your and your competitors website to uncover differences with recommendations to improve the website provided.</li>
+
+                                    <li><span>03.</span>A comprehensive analysis of your competitors backlinks to identify link building strategies and to build a list of targeted, high quality links.</li>
+
+                                    <li><span>04.</span>A links analysis of the top 3 competitors ranking for your chosen keywords to find backlinks they share that are missing from your profile.</li>
+                                </ul>
+                            </div>
+                            <div class="half">
+                                <ul class="text2">
+                                    <li><span>05.</span>An onsite and offsite content audit to see what content your competitor is creating, how they're utilising it and how it's influencing the SEO strategy as a whole.</li>
+
+                                    <li><span>06.</span>An industry and competitor content review to see what the top shared and top linked content is in your industry to help ideate on future content that the target market will react to.</li>
+
+                                    <li><span>07.</span>A 2 hour in-depth audit walkthrough to get your team and any agencies across findings of the audit and to agree on the next step rollout plan your team should follow. Plus a 1-hour follow on meeting as needed.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="center format ">You'll come away from this process with a comprehensive road map on how your company can incease search rankings and organic traffic using the exact strategies employed by your competitors who are succeeding.</p>
+                        
+                        
+                 <div class="lugar_boton2" onmouseover="cambiarColor3(); cambiarFlecha3();cambiarTexto3();" onmouseout="regresarColor3(); regresarFlecha3(); regresarTexto3();">
+                     
+                <div  id="gris"class="tamano2 boton1"></div>
+                <div  id="rosa3" class="tamano2 boton1"></div>
+                       
+                <div id="textoigual3"class="boton_texto" >Apply Now</div>
+                <div id="flecha3"class="flecha"></div>
+                </div>
+                        
+                        
+                   
+                    </div>
+                    
+                        <div class="persona1">
+                        <div class=" tamano ct_responsive">
+                            <h2 class="center">What did our past customers think?</h2>
+                            <div class="home_persona1">
+                                <p class="texto">"Web Profits are our 4th or 5th SEO company. We put them on trial against another company and within 2 weeks the results we got from Web Profits were just incredible."</p>
+                                <div class="foto">
+                                <div class="author ">
+                                    <div class="author_img"><img src="JackSingleton.jpg"></div>
+                                   
+                                </div>
+                                
+                                 <div class="info">
+                                        <h3>Jack Singleton, </h3>
+                                        <p>Chairman @ 1300 Flowers</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                          <div class="content">
+                        <div class="title_limit nl">
+                            <h2>Some of our talented Search &amp; Content Marketing consultants:</h2>
+                        
+                        </div>
+                              
+                            <div class="slides">
+                      
+                            
+                     <div id="contenedor_slides"> 
+                     <div id="personas">
+                    <ul>
+                        <li><img src="Cat_D.jpg" width="367" height="367"></li>
+                        <li><h>Catherine Dix</h>
+						<p>Head of Digital Consulting</p>
+                       </li>
+                    </ul>
+                         
+                      <ul>
+                        <li><img src="Jacqueline.jpg" width="367" height="367"></li>
+                        <li><h>Jacqueline</h>
+			<p>Principal Consultant <br>Search + Content</p>
+                       </li>
+                    </ul>
+                         
+                            <ul>
+                        <li><img src="Nick.jpg"width="367" height="367"></li>
+                        <li><h>Nicholas</h>
+			<p>Principal Consultant <br>Search + Content</p>
+                       </li>
+                    </ul>
+                         
+                     
+                         
+                     </div>
+                      <div id="personas">
+                    <ul>
+                        <li><img src="Mason.jpg" width="367" height="367"></li>
+                        <li ><h>Alex Mason</h>
+						<p>Senior Consultant <br>Search + Content</p>
+                       </li>
+                    </ul>
+                          
+                    <ul>
+                        <li><img src="Jerry.jpg"width="367" height="367"></li>
+                        <li><h>Jarosław</h>
+				<p>Senior Consultant <br>Search + Content</p>
+
+                       </li>
+                    </ul>
+                         
+                      <ul>
+                        <li><img src="Jessica.jpg" width="367" height="367"></li>
+                        <li><h>Jessica Grassick</h>
+                             
+			<p>Senior Consultant <br>Search + Content</p>
+                       </li>
+                    </ul>
+                         
+                  
+                         
+                     
+                         
+                     </div>
+                    <div id="personas">
+                    <ul>
+                        <li><img src="Rebecca.jpg" width="367" height="367"></li>
+                        <li ><h3>Rebecca Starr</h3>
+						<p>Consultant <br>Search + Content</p>
+                       </li>
+                    </ul>
+                         
+                      <ul>
+                        <li><img src="Shayen.jpg" width="367" height="367"></li>
+                        <li><h>Shayen de Silva</h>
+			 <p>Consultant <br>Search + Content</p>
+                       </li>
+                    </ul>
+                         
+                            <ul>
+                        <li><img src="Fiorella.jpg"width="367" height="367"></li>
+                        <li><h>Fiorella</h>
+			<p>Consultant <br>Search + Content</p>
+                       </li>
+                    </ul>
+                  
+                     </div>     
+            </div>
+
+              </div>
+                   </div>
+                
+                <div class="boton_slides"> 
+                 <a id="izq" class="flechita" onclick="move(-1);"></a>
+                                
+                  <a id="derecha" class="flechita" onclick="move(1)"></a>              
+                </div>
+                                
+                              
+                    </div>
+            
+               
+            
+            
+            
+               <div class="lugar_boton2" onmouseover="cambiarColor4_1(); cambiarFlecha4_1(); cambiarTexto4_1();" onmouseout="regresarColor4_1(); regresarFlecha4_1();regresarTexto4_1();">
+                     
+                     <div  id="gris"class="tamano2 boton1"></div>
+                    <div  id="rosa4" class="tamano2 boton1"></div>  
+                    <div id="textoigual4_1" class="boton_texto" >Apply Now</div>
+                    <div id="flecha4_1"class="flecha"></div>
+                </div>
+                        
+            
+            
+                              
+            
+    
+                    
+                    
+                    
+                    <div class= "content2">
+                        
+                        <div class="marcas">
+                        
+                        <div class="left"> 
+                            
+                            
+                            <h2 class="move">You're in <br>good company</h2>
+                        
+                            <div class="botones">
+                                
+                                
+                                <div id="botones1">      
+                                
+        <a id="1_i" class="original invertido" onmouseover="cambiarBoton();" onmouseout="regresarBoton();" onclick="goToSlide(-1);" style="display: inline-block;"></a>
+                                <pseudo:after></pseudo:after>
+                                
+        <a id="1" class="original" onmouseover="cambiarBoton2();" onmouseout="regresarBoton2();" onclick="goToSlide(1);" style="display: inline-block;" ></a>
+                                 <pseudo:after></pseudo:after>
+                                
+                                </div>
+                                
+                            
+                                
+                                
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="right">
+                            
+                              <div id ="allimages" > 
+                
+                  
+
+                        <div id="c1"></div>
+                        <div id ="c2"></div>
+                        <div id="c3"></div>
+                        <div id="c4" > </div>
+                        <div id="c5"></div>
+                        <div id ="c6"></div>
+                        <div id="c7"></div>
+                        <div id="c8" > </div>
+                        <div id="c9" > </div>
+                  
+              
+            </div>
+ 
+                        
+                        </div>
+                    
+                    </div>
+                    
+                    </div>
+                
+       
+        </section>
+        
+          <div class="content altura" >
+                    
+          <section class="red_section center">
+            <img src="bottom_shape.svg" class="blanco2" />
+            <div class="container">
+                <div class="rsp">
+                    <div class="content">
+                        <h2>What are you waiting for? </h2>
+                        <p>Give your team the knowledge they need to grow your organic traffic month on month.</p>
+                    </div>
+                </div>
+            </div>
+              
+                 <div class="lugar_boton2" onmouseover="cambiarColor5(); cambiarFlecha5(); cambiarTexto5();" onmouseout="regresarColor5(); regresarFlecha5(); regresarTexto5();">
+                     
+                     <div  id="blanco" class="tamano2 boton1"></div>
+                     <div  id="rosa5"class="tamano2 boton1"></div>
+                    <div id="textoigual5"class="boton_texto" >Apply Now</div>
+                    <div id="flecha5"class="flecha"></div>
+                </div>
+                        
+        </section>
+
+
+                    </div>      
+                    
+       <footer>
+	<div class="footer_middle">
+		<div class="container">
+			<div class="rsp">
+				<div class="content lg">
+					<div class="row fm_row">
+						
+												
+												
+						<div class="ft_column">
+							<h6>Australia</h6>
+							<h5>Sydney</h5>
+							<p>L3, 79 Myrtle Street Chippendale NSW 2008 - Australia <br>Phone: 02 8806 6800</p>
+						</div>
+						<div class="ft_column">
+							<h5>Melbourne</h5>
+							<p>Level 1, 145 Russell St Melbourne VIC 3000 - Australia <br>Phone: 03 8488 7821</p>
+						</div>
+						
+													<div class="ft_column">
+								<h6>Asia</h6>
+								<h5>Singapore</h5>
+								<p>3 Temasek Avenue #18-01 Centennial Tower Singapore 039190 <br>Phone: +65 6813 3090</p>
+							</div>
+												
+													<div class="ft_column">
+								<h6>United States</h6>
+								<h5>Austin</h5>
+								<p>119 Nueces St, 2nd floor Austin, TX - 78701</p>
+							</div>
+												
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer_bottom">
+		<div class="container">
+			<div class="rsp">
+				<div class="content2 lg">
+					<div class="fb_row row c_row">
+						<div class="w_logo_wr">
+							<img class="w_logo" src="https://www.webprofits.com.au/resources/src/images/w-logo@2x.png">
+						</div>
+						<div class="b_menu_wr">
+							<p>
+                        <a href="https://webprofits.agency/" target="_blank">Web Profits USA</a>
+                        <a href="https://webprofits.com.sg/" target="_blank">Web Profits SEA</a>
+                        <a href="https://webprofits.workable.com/" target="_blank">Careers</a>
+								<a href="/contact.html">Contact</a>
+								<a href="/privacy-policy.html">Privacy Policy</a>
+							</p>
+						</div>
+						<p class="fb_last">© 2019 Web Profits. All Rights Reserved</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>  
+</footer>        
+
+    </div>
+    
+    </body>
+    
+</html>
